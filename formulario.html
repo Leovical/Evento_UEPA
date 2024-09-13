@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrições</title>
+    <link rel="stylesheet" href="css/style_formulario.css">
+</head>
+<body>
+    <header>
+        <div class="head1">
+          <div class="contato">
+            <img src="img/contato.png" alt="num foi" />
+  
+            <div class="textcont">
+              <h3>(91) 3765-1566</h3>
+              <p>uepa.castanhal@gmail.com</p>
+            </div>
+          </div>
+  
+          <div class="horario">
+            <img src="img/relogio.png" alt="" />
+  
+            <div class="textcont">
+              <h3>7h30 - 18h00</h3>
+              <p>Segunda à Sexta</p>
+            </div>
+          </div>
+  
+          <div class="loguepa">
+            <img src="img/uepa_logo.png" alt="num foi" />
+          </div>
+  
+          <div class="local">
+            <img src="img/localizacao.png" alt="" />
+  
+            <div class="textcont">
+              <h3>Castanhal, PA</h3>
+              <p>R. Pedro Porpino da Silva, 1181 - São José, 68745-000</p>
+            </div>
+          </div>
+        </div>
+  
+        <nav>
+          <div class="part1">
+            <a href="index.html"><p>Evento</p></a>
+            <a href="sistema_av.html"><p>A definir</p></a>
+            <a href="corpo_nucleo.html"><p>Palestrantes</p></a>
+          </div>
+  
+          <div class="part2">
+            <a href="campus.html"><p>Campus</p></a>
+            <a href="colegiado.html"><p>A definir</p></a>
+            <a href="#fale-conosco"><p>Inscrições</p></a>
+            <a href="#rodape"><p>Mais Info.</p></a>
+          </div>
+        </nav>
+      </header>
+
+      <main id="fale-conosco">
+        <div class="fale-conosco">
+            <div class="textfale-conosco">
+            <div class="horizontal-bar"></div>
+            <h2>Inscrições</h2>
+            <form id="contact-form" method = "post" action = "formulario.php">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder = "Ex: Leonardo Victor Araújo Andrade Alves" >
+                </div>
+                <div class="form-group">
+                    <label for="name">E-mail:</label>
+                    <input type="email" id="name" name="email" placeholder = "Ex: leovictor.alves@hotmail.com" >
+                </div>
+                <div class="form-group">
+                    <label for="subject">Assunto:</label>
+                    <select id="subject" name="subject" >
+                        <option value="">Selecione</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="problema">Problema</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" placeholder = "Digite aqui a respeito do assunto..." ></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="horizontal-bar"></div>
+
+            <div class="message">
+              <?php 
+              if(isset($texto)){
+                echo $texto;
+              }
+              ?>
+            </div>
+        </div>
+        </div>
+      </main>
+
+      <footer id="rodape">
+
+        <div class="nameorange">
+        <div class="rodapeuepa">
+          <a href="https://www.uepa.br" target="_blank"><img src="img/marcauepa.png" alt="num deu"></a>
+        </div>
+          <div class="nome">
+            <p>-- © Copyright, site desenvolvido por Leonardo Victor Araújo Andrade Alves --</p>
+          </div>
+  
+          <div class="infocontato">
+            <img src="img/contato.png" alt="num deu">
+  
+          <div class="textinfocontato">
+            <h3>(91) 3765-1566</h3>
+            <p>uepa.castanhal@gmail.com</p>
+          </div>
+          </div>
+        </div>
+  
+        
+  
+        <div class="nameblack">
+          <a href="https://www.instagram.com/uepaoficial/" target="_blank"><img src="img/icon-instagram.png" alt="num deu"></a>
+          <a href="https://www.facebook.com/UepaOficial/?locale=pt_BR" target="_blank"><img src="img/icon-facebook.png" alt="num deu"></a>
+          <a href="https://twitter.com/uepaoficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="img/icon-twitter.png" alt="num deu"></a>
+          <a href="https://www.youtube.com/channel/UCiW52AgF7Y62gvDw500haAw" target="_blank">  <img src="img/icon-youtube.png" alt="num deu"></a>
+        </div>
+  
+        
+  
+        <div class="namegrey">
+        <div class="rodapeuepa">
+          <a href="https://www.uepa.br/pt-br/pagina/centro-de-ciências-naturais-e-tecnologia" target="_blank"><img src="img/ccnt-logo.png" alt="num deu"></a>
+        </div>
+          <div class="infolocal">
+  
+            <img src="img/icon-localorange.png" alt="num deu">
+  
+          <div class="textinfolocal">
+            <h3 style="color: rgb(247, 173, 61);">Castanhal, PA</h3>
+            <p style="color: white;">R. Pedro Porpino da Silva, 1181 - São José, 68745-000</p>
+          </div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>

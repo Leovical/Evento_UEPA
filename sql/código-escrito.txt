@@ -1,0 +1,7 @@
+CREATE TABLE form (
+  id int PRIMARY key auto_increment,
+  nome varchar(70),
+  assunto varchar(20),
+  mensagem text,
+  email varchar(70)
+);

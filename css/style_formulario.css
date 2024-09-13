@@ -1,0 +1,322 @@
+/*TAGS*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+a{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    max-width: fit-content;
+}
+   
+
+a:hover{
+    color:rgb(255, 153,  0);
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+  
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(36, 32, 32);
+    color: white;
+    padding: 1rem;
+    gap: 15rem;
+}
+
+  
+footer{
+    height: 12rem;
+    display: flex;
+}
+
+ 
+
+/*CABEÇALHO*/
+.part1,
+.part2 {
+  display: flex;
+  width: 30rem;
+  justify-content: space-around;
+}
+
+.head1 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.contato {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 20rem;
+  border: 1px;
+  align-items: center;
+  gap: 1rem;
+}
+
+.textcont {
+  font-size: 0.8rem;
+}
+
+.horario {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 20rem;
+  border: 1px;
+  align-items: center;
+  gap: 1rem;
+}
+
+.local {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 30rem;
+  border: 1px;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loguepa {
+  position: relative;
+  width: 12rem;
+}
+
+.loguepa img {
+    width: 12rem;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    z-index: 100;
+  }
+  
+  .contato img {
+    max-height: 2.2rem;
+    max-width: 2.2rem;
+  }
+  
+  .horario img {
+    max-height: 2.2rem;
+    max-width: 2.2rem;
+  }
+  
+  .local img {
+    max-height: 2.2rem;
+    max-width: 2.2rem;
+  }
+
+/*MAIN*/
+.fale-conosco{
+  background-color: #eee;
+  padding-left: 10rem;
+  height: 50rem;
+  padding-top: 10rem;
+}
+
+.textfale-conosco{
+    align-items: center;
+}
+
+main #fale-conosco {
+    padding: 4rem;
+
+}
+
+form{
+    width: 60%;
+}
+
+.fale-conosco h2 {
+  margin-bottom: 1rem;
+}
+
+.fale-conosco label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.fale-conosco input,
+.fale-conosco select,
+.fale-conosco textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.fale-conosco textarea {
+  resize: vertical;
+}
+
+.fale-conosco button {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.fale-conosco button:hover {
+  background-color: #555;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.horizontal-bar {
+  margin: 20px;
+  height: 3px;
+  width: 58rem;
+  background-color: rgb(255, 153, 0);
+  margin-left: 0;
+}
+
+.message{
+  font-size: larger;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*FOOTER*/
+  .nameblack{
+    background-color: rgb(15, 14, 14);
+    height: 12rem;
+    min-width: 7%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    left: 46.5%;
+    border: 2px solid rgb(235, 222, 222);
+}
+
+.nameblack img{ 
+    margin: 0 auto;
+    height: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s; 
+}
+
+.nameblack img:hover{
+  scale: 1.4;
+}
+
+.nameorange{
+  background-color: rgb(247, 173, 61);
+  height: 12rem;
+  width: 46.5% ;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgb(235, 222, 222);
+
+}
+
+.nameorange a img{
+  height: auto;
+  display: flex;
+  width: 6rem;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.76);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  max-width: 8rem;
+  
+}
+
+.nameorange a img:hover{
+  scale: 1.2;
+}
+
+.nameorange a{
+  margin-left: 2rem;
+}
+
+.rodapeuepa{
+  display: flex;
+  align-items: center;
+}
+
+.infocontato{
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: fit-content;
+  right: 0;
+  margin-right: 2rem;
+}
+
+.infocontato img{
+  width: 4rem;
+}
+
+.infolocal{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+
+.textinfolocal{
+  margin-left: 1.5rem;
+}
+
+.textinfocontato{
+  margin-right: 1.5rem;
+}
+
+.textinfocontato h3{
+  text-align: end;
+}
+
+.namegrey{
+  background-color: rgb(63, 61, 61);
+  height: 12rem;
+  width: 46.5%;
+  float: right;
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding-right: 2rem;
+  border: 2px solid rgb(235, 222, 222);
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.namegrey a img{
+  height: auto;
+  display: flex;
+  width: 4rem;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.76);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.namegrey a img:hover{
+  scale: 1.2;
+}
+
+.nome{
+  position: absolute;
+  font-style: italic;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  bottom: 0;
+}
+
+.nome p{
+  font-size: small;
+}
