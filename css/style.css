@@ -232,12 +232,12 @@ footer{
   gap: 1rem;
 }
 
-.loguepa {
+.logamazon {
   position: relative;
   width: 12rem;
 }
 
-.loguepa img {
+.logamazon img {
   width: 12rem;
   position: absolute;
   top: 0;
@@ -261,7 +261,7 @@ footer{
 }
 
 #presentation {
-  background-image: url(../img/uepa_local.png);
+  background-image: url(../img/amazoniatec.png);
   height: 80vh;
   width: 100%;
   background-repeat: no-repeat;
