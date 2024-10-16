@@ -155,7 +155,7 @@ footer{
   display: flex;
   height: 100rem;
   justify-content: center;
-  margin-left: 7rem;
+  margin-left: 4rem;
 }
 
 .container-img img{
@@ -163,7 +163,7 @@ footer{
   border-radius: 10px;
   align-items: center;
   justify-content: center;
-  width: 12.5rem;
+  max-width: 12.5rem;
   margin-bottom: 2rem;
 }
 
@@ -173,7 +173,7 @@ footer{
 }
 
 .cards-prof{
-  width: 88rem;
+  width: 85rem;
   margin-left: 4rem;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.76);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.76);
