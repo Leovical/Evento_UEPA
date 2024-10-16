@@ -114,18 +114,18 @@ footer{
   }
 
 /*MAIN*/
-.fale-conosco{
+.inscricoes{
   background-color: #eee;
   padding-left: 10rem;
   height: 50rem;
   padding-top: 7rem;
 }
 
-.textfale-conosco{
+.textinscricoes{
     align-items: center;
 }
 
-main #fale-conosco {
+main #inscricoes {
     padding: 4rem;
 
 }
@@ -134,18 +134,18 @@ form{
     width: 60%;
 }
 
-.fale-conosco h2 {
+.inscricoes h2 {
   margin-bottom: 1rem;
 }
 
-.fale-conosco label {
+.inscricoes label {
   display: block;
   margin-bottom: 0.5rem;
 }
 
-.fale-conosco input,
-.fale-conosco select,
-.fale-conosco textarea {
+.inscricoes input,
+.inscricoes select,
+.inscricoes textarea {
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1rem;
@@ -153,11 +153,11 @@ form{
   border-radius: 4px;
 }
 
-.fale-conosco textarea {
+.inscricoes textarea {
   resize: vertical;
 }
 
-.fale-conosco button {
+.inscricoes button {
   background-color: #333;
   color: white;
   padding: 0.5rem 1rem;
@@ -165,7 +165,7 @@ form{
   cursor: pointer;
 }
 
-.fale-conosco button:hover {
+.inscricoes button:hover {
   background-color: #555;
 }
 
