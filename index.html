@@ -1,178 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CodeLink Summit</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="head1">
-        <div class="contato">
-          <img src="img/contato.png" alt="num foi" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeLink Summit</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-          <div class="textcont">
-            <h3>(91) 3765-1566</h3>
-            <p>amazonia.clsummit@gmail.com</p>
-          </div>
-        </div>
+<body>
+  <header>
+    <div class="head1">
+      <div class="contato">
+        <img src="img/contato.png" alt="num foi" />
 
-        <div class="horario">
-          <img src="img/relogio.png" alt="" />
-
-          <div class="textcont">
-            <h3>04/11/2024 - 08/11/2024</h3>
-            <p>Segunda à Sexta - 14h00 às 18h00</p>
-          </div>
-        </div>
-
-        <div class="logamazon">
-          <img src="img/treeamazon1.png" alt="num foi" />
-        </div>
-
-        <div class="local">
-          <img src="img/localizacao.png" alt="" />
-
-          <div class="textcont">
-            <h3>Castanhal, PA</h3>
-            <p>R. Pedro Porpino da Silva, 1181 - São José, 68745-000</p>
-          </div>
+        <div class="textcont">
+          <h3>(91) 3765-1566</h3>
+          <p>amazonia.clsummit@gmail.com</p>
         </div>
       </div>
 
-      <nav>
-        <div class="part1">
-          <a href="#curso-estrutura"><p>Evento</p></a>
-          <a href="programacao.html"><p>Programação</p></a>
-          <a href="palestrantes.html"><p>Palestrantes</p></a>
+      <div class="horario">
+        <img src="img/relogio.png" alt="" />
+
+        <div class="textcont">
+          <h3>04/11/2024 - 08/11/2024</h3>
+          <p>Segunda à Sexta - 14h00 às 18h00</p>
         </div>
-
-        <div class="part2">
-          <a href="campus.html"><p>Campus</p></a>
-          <a href="inscricoes.html"><p>Inscrições</p></a>
-          <a href="#rodape"><p>Mais Info.</p></a>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <section id="presentation"></section>
-
-      <div class="secpre">
-        <h1>CodeLink <span>Summit</span></h1>
-        <p>
-          <span>Inteligência Artificial e Machine Learning:</span> Explorando o impacto da IA e do aprendizado de máquina no desenvolvimento de software.
-        </p>
       </div>
 
-      <section id="curso-estrutura">
-        <div class="container-title">
-          <div class="horizontal-bar"></div>
-          <h1>PROGRAMAÇÃO <span>GERAL</span></h1>
-          <div class="horizontal-bar"></div>
+      <div class="logamazon">
+        <img src="img/treeamazon1.png" alt="num foi" />
+      </div>
+
+      <div class="local">
+        <img src="img/localizacao.png" alt="" />
+
+        <div class="textcont">
+          <h3>Castanhal, PA</h3>
+          <p>R. Pedro Porpino da Silva, 1181 - São José, 68745-000</p>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <div class="part1">
+        <a href="#curso-estrutura">
+          <p>Evento</p>
+        </a>
+        <a href="programacao.html">
+          <p>Programação</p>
+        </a>
+        <a href="palestrantes.html">
+          <p>Palestrantes</p>
+        </a>
+      </div>
+
+      <div class="part2">
+        <a href="campus.html">
+          <p>Campus</p>
+        </a>
+        <a href="inscricoes.html">
+          <p>Inscrições</p>
+        </a>
+        <a href="#rodape">
+          <p>Mais Info.</p>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="presentation"></section>
+
+    <div class="secpre">
+      <h1>CodeLink <span>Summit</span></h1>
+      <p>
+        <span>DevOps e Automação:</span> Como integrar equipes de desenvolvimento e operações com ferramentas como
+        Docker, Kubernetes e CI/CD, automatizando o ciclo de vida de desenvolvimento.
+      </p>
+    </div>
+
+    <section id="curso-estrutura">
+      <div class="container-title">
+        <div class="horizontal-bar"></div>
+        <h1>VISÃO GERAL<span> DO EVENTO</span></h1>
+        <div class="horizontal-bar"></div>
+      </div>
+
+      <div class="container">
+        <!-- carrossel de fotos -->
+        <div class="carousel-container">
+          <div class="carousel">
+            <img src="img/devops.jpeg" alt="Evento 1" />
+            <img src="img/devops2.png" alt="Evento 2" />
+            <img src="img/devops3.png" alt="Evento 3" />
+          </div>
         </div>
 
-        <div class="container">
-          <div class="cards-curso">
-            <h3>Recepção e Credencimento - 8h30 às 9h00</h3>
-            <li>Registro dos participantes e boas-vindas.</li>
-          </div>
+        <!-- loop em javascript -->
+        <script>
+          const carousel = document.querySelector('.carousel');
+          let currentIndex = 0;
+          const totalImages = document.querySelectorAll('.carousel img').length;
+        
+          function showNextImage() {
+      
+            currentIndex = (currentIndex + 1) % totalImages;
+            const translateXValue = -currentIndex * 100;
+        
+            carousel.style.transform = `translateX(${translateXValue}%)`;
+          }
+     
+          setInterval(showNextImage, 3000); 
+        </script>
 
-          <div class="cards-curso">
-            <h3>Abertura e Boas-Vindas - 9h00 às 9h30</h3>
-            <li>Introdução ao evento e objetivos principais.</li>
-          </div>
-
-          <div class="cards-curso">
-            <h3>Palestra de abertura - 9h30 às 10h30</h3>
-            <li>Especialista fala sobre tendências em IA e Machine Learning.</li>
-          </div>
-
-          <div class="cards-curso">
-            <h3>Coffee Break e Networking - 10h30 às 11h00</h3>
-            <li>Oportunidade para interação e troca de contatos.</li>
-          </div>
-
-          <div class="cards-curso">
-            <h3>Painel de Discussão - 11h00 às 12h30</h3>
-           <li>"Impacto da IA no Desenvolvimento de Software", com diversos experts.</li>
-          </div>
-
-          <div class="cards-curso">
-            <h3>Almoço - 12h00 às 14h00</h3>
-            <li>Pausa para almoço e interação entre participantes.</li>
-          </div>
-
-          <div class="cards-curso">
-            <h3>Workshops Simultâneos - 14h00 às 15h30</h3>
-            <li>Sessões práticas sobre IA e ML, escolha entre diferentes temas.</li>
-          </div>
-
-          <div class="cards-curso">
-            <h3>Coffe Break e Networking - 15h30 às 16h00</h3>
-            <li>Intervalo com café e networking entre os participantes.</li>
-          </div>
-
-          <div class="cards-curso">
-            <h3>Apresentação de Cases de Sucesso - 16h00 às 17h00</h3>
-            <li>Empresas destacam como utilizam IA e ML em seus produtos.</li>
-          </div>
-
-          <div class="cards-curso">
-            <h3>Sessão de Encerramento - 17h00 às 18h00</h3>
-            <li>Conclusões do evento, feedback e entrega de certificados.</li>
-          </div>
+        <!-- descrição textual do evento -->
+        <div class="cards-curso">
+          <h2>O que esperar do CodeLink Summit?</h2>
+          <p>
+            O CodeLink Summit é um evento imperdível para profissionais e entusiastas de tecnologia. Durante uma semana,
+            abordaremos como as práticas de DevOps e Automação estão revolucionando o desenvolvimento de software,
+            otimizando tanto a entrega contínua quanto a integração entre equipes de desenvolvimento e operações.
+          </p>
+          <p>
+            Vamos explorar em profundidade o uso de ferramentas essenciais como Docker e Kubernetes, destacando como
+            elas podem ser implementadas para gerenciar e orquestrar contêineres de forma eficiente. Será dado um
+            enfoque prático em CI/CD (Integração Contínua e Entrega Contínua), demonstrando como essas práticas podem
+            reduzir o tempo de entrega de software e aumentar a qualidade final do produto.
+          </p>
+          <p>
+            Além disso, discutiremos o papel crescente da Inteligência Artificial (IA) no desenvolvimento de software,
+            desde a automação de processos até a criação de soluções que utilizam aprendizado de máquina para resolver
+            problemas complexos. Você aprenderá como IA e DevOps podem ser combinados para criar fluxos de trabalho
+            ainda mais ágeis e otimizados.
+          </p>
+          <p>
+            Ao longo do evento, você terá a oportunidade de participar de workshops práticos, onde poderá aplicar os
+            conceitos discutidos e trocar experiências com outros profissionais. Palestrantes renomados compartilharão
+            suas experiências em projetos reais, mostrando como enfrentar desafios de escalabilidade, segurança e
+            otimização de recursos em ambientes de produção.
+          </p>
+          <p>
+            Também serão apresentadas as tendências mais recentes em cloud computing, microsserviços e pipelines de
+            automação, ajudando você a preparar sua equipe e infraestrutura para os desafios do futuro. O CodeLink
+            Summit oferece uma visão holística da transformação digital e da integração de novas tecnologias,
+            proporcionando insights valiosos para quem deseja liderar a inovação no setor de TI.
+          </p>
         </div>
-      </section>
-    </main>
+      </div>
 
-    <footer id="rodape">
+    </section>
+  </main>
 
-      <div class="nameorange">
+  <footer id="rodape">
+
+    <div class="nameorange">
       <div class="rodapeuepa">
-        <! nada por aqui, mas, adicionar mais tarde>
+        <!-- nada por aqui, mas, adicionar mais tarde -->
       </div>
-        <div class="nome">
-          <p>-- © Copyright, site desenvolvido por JLP --</p>
-        </div>
+      <div class="nome">
+        <p>-- © Copyright, site desenvolvido por JLP --</p>
+      </div>
 
-        <div class="infocontato">
-          <img src="img/contato.png" alt="num deu">
+      <div class="infocontato">
+        <img src="img/contato.png" alt="num deu">
 
         <div class="textinfocontato">
           <h3>(91) 3765-1566</h3>
           <p>amazonia.clsummit@gmail.com</p>
         </div>
-        </div>
       </div>
+    </div>
 
-      
 
-      <div class="nameblack">
-        <a href="https://www.instagram.com" target="_blank"><img src="img/icon-instagram.png" alt="num deu"></a>
-        <a href="https://www.facebook.com" target="_blank"><img src="img/icon-facebook.png" alt="num deu"></a>
-        <a href="https://twitter.com" target="_blank"><img src="img/icon-twitter.png" alt="num deu"></a>
-        <a href="https://www.youtube.com" target="_blank">  <img src="img/icon-youtube.png" alt="num deu"></a>
-      </div>
 
-      
+    <div class="nameblack">
+      <a href="https://www.instagram.com" target="_blank"><img src="img/icon-instagram.png" alt="num deu"></a>
+      <a href="https://www.facebook.com" target="_blank"><img src="img/icon-facebook.png" alt="num deu"></a>
+      <a href="https://twitter.com" target="_blank"><img src="img/icon-twitter.png" alt="num deu"></a>
+      <a href="https://www.youtube.com" target="_blank"> <img src="img/icon-youtube.png" alt="num deu"></a>
+    </div>
 
-      <div class="namegrey">
+
+
+    <div class="namegrey">
       <div class="rodapeuepa">
-        <!nada por aqui, mas adicionar mais tarde > 
+        <!-- nada por aqui, mas adicionar mais tarde -->
       </div>
-        <div class="infolocal">
+      <div class="infolocal">
 
-          <img src="img/icon-localorange.png" alt="num deu">
+        <img src="img/icon-localorange.png" alt="num deu">
 
         <div class="textinfolocal">
           <h3 style="color: rgb(247, 173, 61);">Castanhal, PA</h3>
           <p style="color: white;">R. Pedro Porpino da Silva, 1181 - São José, 68745-000</p>
         </div>
-        </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>

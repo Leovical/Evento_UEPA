@@ -233,11 +233,11 @@ footer{
 
 .logamazon {
   position: relative;
-  width: 12rem;
+  width: 16rem;
 }
 
 .logamazon img {
-  width: 12rem;
+  width: 10rem;
   position: absolute;
   top: 0;
   border-radius: 10px;
@@ -270,10 +270,11 @@ footer{
   position: relative;
 }
 
+
 .secpre h1 {
   color: rgb(255, 255, 255);
   font-size: 4rem;
-  top: 25rem;
+  top: 20rem;
   padding-left: 4rem;
   position: absolute;
 }
@@ -284,7 +285,7 @@ footer{
 
 .secpre p {
   color: white;
-  top: 32rem;
+  top: 27rem;
   position: absolute;
   padding-left: 6rem;
   max-width: 58rem;
@@ -295,6 +296,8 @@ footer{
 .secpre span{
   color: rgb(255, 153, 0);
 }
+
+/*MAIN*/
 
 .horizontal-bar {
   height: 4px;
@@ -310,21 +313,59 @@ footer{
   gap: 2rem;
 }
 
+.container-title h1{
+  font-size: 2.5rem;
+}
+
+/* Layout para a seção curso-estrutura */
 .container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 3rem;
-  justify-content: center;
-  flex-wrap: wrap;
   padding: 4rem 6rem;
 }
 
+/* Estilizando o carrossel */
+.carousel-container {
+  width: 45%;
+  overflow: hidden; /* Esconde as imagens fora do container */
+  position: relative; /* Necessário para o posicionamento do carrossel */
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 10px;
+
+}
+
+.carousel img {
+  min-width: 100%; 
+  height: auto;
+  border-radius: 15px; 
+  transition: transform 0.5s ease-in-out; 
+}
+
+
+/* Cards de descrição do evento */
 .cards-curso {
-  width: 25rem;
+  width: 55%;
+  padding: 2rem;
+  background-color: white;
   -webkit-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.76);
-  -moz-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.76);
   box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.76);
   border-radius: 10px;
-  padding: 2rem;
+}
+
+.cards-curso h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cards-curso p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
 }
 
 #curso-estrutura h1 {

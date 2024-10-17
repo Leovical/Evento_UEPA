@@ -87,11 +87,11 @@ footer{
 
 .logamazon {
   position: relative;
-  width: 12rem;
+  width: 16rem;
 }
 
 .logamazon img {
-    width: 12rem;
+    width: 10rem;
     position: absolute;
     top: 0;
     border-radius: 10px;
@@ -114,10 +114,43 @@ footer{
   }
 
 /*MAIN*/
-.sistema{
+
+.programacao{
   min-height: 70rem;
   background-color:#eee;
 }
+
+.horizontal-bar {
+  height: 4px;
+  width: 16rem;
+  background-color: rgb(255, 153, 0);
+}
+
+.container-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  gap: 2rem;
+}
+
+#programacao h1 {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#programacao h1 span {
+  color: rgb(87, 87, 87);
+}
+
+#programacao ol {
+  margin-left: 20px;
+}
+
+#programacao ul {
+  margin-left: 30px;
+}
+
 
 /*FOOTER*/
   .nameblack{
