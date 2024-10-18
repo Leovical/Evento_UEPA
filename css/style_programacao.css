@@ -124,7 +124,7 @@ footer{
 /*MAIN*/
 
 .programacao{
-  min-height: 70rem;
+  min-height: 50rem;
   background-color:#eee;
 }
 
@@ -157,6 +157,84 @@ footer{
 
 #programacao ul {
   margin-left: 30px;
+}
+
+.dias-programacao {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 1.5rem;
+  padding-top: 4rem;
+
+}
+
+.box-dia {
+  background-color: white;
+  border: 2px solid rgb(255, 153, 0);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  width: 15rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.box-dia:hover {
+  transform: scale(1.05);
+}
+
+.box-dia h3 {
+  margin-bottom: 0.5rem;
+  color: rgb(36, 32, 32);
+}
+
+.box-dia p {
+  color: rgb(87, 87, 87);
+  font-size: 1rem;
+}
+
+/* CRONOGRAMAS */
+.schedule-content {
+  display: none;
+  padding: 1rem;
+  background-color: #f7f7f7;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.schedule-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.schedule-content ul li {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: rgb(87, 87, 87);
+}
+
+/* hover dias */
+.box-dia {
+  cursor: pointer;
+}
+
+/* animação de expansão */
+.schedule-content.open {
+  display: block;
+  animation: expand 0.3s ease-out;
+}
+
+@keyframes expand {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 300px;
+    opacity: 1;
+  }
 }
 
 

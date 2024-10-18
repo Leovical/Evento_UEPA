@@ -64,7 +64,80 @@
             <h1>PROGRAMAÇÃO <span>GERAL</span></h1>
             <div class="horizontal-bar"></div>
           </div>
-          
+
+          <div class="dias-programacao">
+
+            <div class="box-dia"  onclick="toggleSchedule('schedule1')">
+              <h3>Segunda-feira</h3>
+              <p>04/11/2024</p>
+              <div id="schedule1" class="schedule-content">
+                <ul>
+                  <li><strong>14h - 15h:</strong> Introdução ao DevOps e Automação</li>
+                  <li><strong>15h - 15h15:</strong> Coffee Break</li>
+                  <li><strong>15h15 - 16h:</strong> Ferramentas e Práticas de Integração Contínua (CI)</li>
+                  <li><strong>16h - 17h:</strong> Containerização com Docker</li>
+                  <li><strong>17h - 18h:</strong> Perguntas e Respostas</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="box-dia" onclick="toggleSchedule('schedule2')">
+              <h3>Terça-feira</h3>
+              <p>05/11/2024</p>
+              <div id="schedule2" class="schedule-content">
+                <ul>
+                  <li><strong>14h - 15h:</strong> Kubernetes: Orquestração de Containers</li>
+                  <li><strong>15h - 15h15:</strong> Coffee Break</li>
+                  <li><strong>15h15 - 16h:</strong> Deploy Contínuo (CD): Conceitos e Práticas</li>
+                  <li><strong>16h - 17h:</strong> Configuração de Pipelines CI/CD</li>
+                  <li><strong>17h - 18h:</strong> Casos de Uso Reais de DevOps</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="box-dia" onclick="toggleSchedule('schedule3')">
+              <h3>Quarta-feira</h3>
+              <p>06/11/2024</p>
+              <div id="schedule3" class="schedule-content">
+                <ul>
+                  <li><strong>14h - 15h:</strong> Monitoramento e Observabilidade com Prometheus e Grafana</li>
+                  <li><strong>15h - 15h15:</strong> Coffee Break</li>
+                  <li><strong>15h15 - 16h:</strong> Testes Automatizados e Integração em Pipelines</li>
+                  <li><strong>16h - 17h:</strong> Segurança em Ambientes DevOps</li>
+                  <li><strong>17h - 18h:</strong> Perguntas e Respostas</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="box-dia" onclick="toggleSchedule('schedule4')">
+              <h3>Quinta-feira</h3>
+              <p>07/11/2024</p>
+              <div id="schedule4" class="schedule-content">
+                <ul>
+                  <li><strong>14h - 15h:</strong> Automação de Infraestrutura com Terraform</li>
+                  <li><strong>15h - 15h15:</strong> Coffee Break</li>
+                  <li><strong>15h15 - 16h:</strong> Gerenciamento de Configurações com Ansible</li>
+                  <li><strong>16h - 17h:</strong> CI/CD em Nuvem: AWS, Azure, GCP</li>
+                  <li><strong>17h - 18h:</strong> Casos de Estudo de Automação</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="box-dia" onclick="toggleSchedule('schedule5')">
+              <h3>Sexta-feira</h3>
+              <p>08/11/2024</p>
+              <div id="schedule5" class="schedule-content">
+                <ul>
+                  <li><strong>14h - 15h:</strong> DevOps na Prática: Pipeline Completo</li>
+                  <li><strong>15h - 15h15:</strong> Coffee Break</li>
+                  <li><strong>15h15 - 16h:</strong> Melhores Práticas de Escalabilidade e Resiliência</li>
+                  <li><strong>16h - 17h:</strong> Otimizando Pipelines CI/CD</li>
+                  <li><strong>17h - 18h:</strong> Conclusão e Sessão de Encerramento</li>
+                </ul>
+              </div>
+            </div>
+
+          </div> 
      </div>
       </main>
 
@@ -114,5 +187,28 @@
           </div>
         </div>
       </footer>
+
+      <script>
+        function toggleSchedule(id) {
+  // conteúdo do cronograma que será animado
+  const content = document.getElementById(id);
+  
+  // visibilidade de conteúdo
+  if (content.style.display === "block") {
+    // se visível, esconde o conteúdo
+    content.style.display = "none";
+  } else {
+    content.style.display = "block";
+  }
+
+  // mantme os modulos abertos e vai mostrando os outros
+  const schedules = document.getElementsByClassName('schedule-content');
+  for (let i = 0; i < schedules.length; i++) {
+    if (schedules[i].id !== id) {
+      schedules[i].style.display = 'none';
+    }
+  }
+}
+      </script>
 </body>
 </html>
