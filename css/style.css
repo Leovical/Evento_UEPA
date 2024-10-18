@@ -193,6 +193,10 @@ footer{
   justify-content: space-around;
 }
 
+.part2{
+  padding-left: 4.5rem;
+}
+
 .head1 {
   display: flex;
   justify-content: center;
@@ -220,6 +224,10 @@ footer{
   border: 1px;
   align-items: center;
   gap: 1rem;
+}
+
+.horario, .contato {
+  transform: translateX(-65px); 
 }
 
 .local {
