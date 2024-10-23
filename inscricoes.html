@@ -48,7 +48,7 @@
 
     <nav class="nav-options">
       <div class="options">
-        <a href="#curso-estrutura">
+        <a href="index.html">
           <p>Evento</p>
         </a>
         <a href="programacao.html">
@@ -77,7 +77,7 @@
           <div class="horizontal-bar"></div>
             <div class="textinscricoes">
               <h2>Cadastro dos Participantes</h2>
-              <form id="registration-form" method="post" action="registro.php">
+              <form id="registration-form" method="POST" action="index.php">
                   <div class="form-group">
                       <label for="full-name">Nome Completo:</label>
                       <input type="text" id="full-name" name="full-name" placeholder="Ex: Leonardo Victor Araújo Andrade Alves" required>
@@ -102,8 +102,10 @@
                       <label for="additional-info">Informações Adicionais:</label>
                       <textarea id="additional-info" name="additional-info" rows="3" placeholder="Digite aqui algum interesse específico no evento..."></textarea>
                   </div>
-                  <button type="submit">Enviar Inscrição</button>
+                  <button type="submit">Submit</button>
               </form>
+
+              
         </div>
         <div class="horizontal-bar"></div>
         </div>
@@ -112,9 +114,6 @@
       <footer id="rodape">
 
         <div class="nameorange">
-        <div class="rodapeuepa">
-          <!nada, mas colocar algo depois>
-        </div>
           <div class="nome">
             <p>-- © Copyright, site desenvolvido por JLP --</p>
           </div>
