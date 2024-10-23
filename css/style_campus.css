@@ -22,6 +22,14 @@ html {
     scroll-behavior: smooth;
 }
   
+header{
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -31,6 +39,13 @@ nav {
     gap: 15rem;
 }
 
+header{
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
   
 footer{
     height: 12rem;
@@ -40,18 +55,21 @@ footer{
  
 
 /*CABEÇALHO*/
-.part1,
-.part2 {
+.options {
   display: flex;
-  width: 30rem;
-  justify-content: space-around;
+  gap: 5rem;
+  width: 100%;
+  justify-content: center;
 }
 
-.part2{
-  padding-left: 4.5rem;
+.head{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .head1 {
+  height: fit-content;
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -94,36 +112,40 @@ footer{
 }
 
 .logamazon {
-  position: relative;
-  width: 16rem;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: max-content;
+  border: 1px;
+  align-items: center;
+  gap: 1rem;
 }
 
 .logamazon img {
-    width: 12rem;
-    position: absolute;
-    top: 0;
-    border-radius: 10px;
-    z-index: 100;
-  }
-  
-  .contato img {
-    max-height: 2.2rem;
-    max-width: 2.2rem;
-  }
-  
-  .horario img {
-    max-height: 2.2rem;
-    max-width: 2.2rem;
-  }
-  
-  .local img {
-    max-height: 2.2rem;
-    max-width: 2.2rem;
-  }
+  max-width: 7rem;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.contato img {
+  max-height: 2.2rem;
+  max-width: 2.2rem;
+}
+
+.horario img {
+  max-height: 2.2rem;
+  max-width: 2.2rem;
+}
+
+.local img {
+  max-height: 2.2rem;
+  max-width: 2.2rem;
+}
 
 /*MAIN*/
 .campus{
-  height: 70rem;
+  height: max-content;
+  padding: 2vh;
+  overflow: hidden;
   background-color:#eee;
 }
 
@@ -146,11 +168,14 @@ footer{
   flex-direction: column;
   display: flex;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .imgs-uepa img{
-    height: 16rem;
+    max-height: 15vw;
+    height: auto;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -160,24 +185,31 @@ footer{
 }
 
 .img{
-  margin-top: 1rem;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.76);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.76);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.76);
   border-radius: 10px;
-  height: 18rem;
-  width: 85%;
+  min-height: 18rem;
+  height: fit-content;
+  width: 100%;
+  max-width: 85vw;
+  padding: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 1rem
+
 }
 
 .img img{
-  margin-left: 2rem;
   border-radius: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-.in-img{
-  margin-left: 5rem;
-  margin-top: 1rem;
-}
 
 /*FOOTER*/
   .nameblack{
@@ -315,62 +347,91 @@ footer{
 }
 
 
-/* Media queries para tornar o site responsivo */
-
-@media screen and (max-width: 768px) {
-  /* Estilos para telas menores */
-  body {
-    font-size: 14px;
+@media screen and (max-width:1320px) {
+  .head1{
+    display: none;
   }
-  
-  nav {
-    gap: 8rem;
-  }
-
-  .container-title {
+  .options{
     flex-direction: column;
-    padding-top: 2rem;
-  }
-
-  .imgs-uepa {
-    margin-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 1.5vh;
     align-items: center;
   }
 
-  .nameblack,
-  .nameorange,
-  .namegrey {
+  .infocontato{
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 0;
     width: 100%;
-    left: 0;
-    right: 0;
+    font-size: 1rem;
   }
 
-  .part1,
-  .part2 {
+  .textinfocontato{
+    display: flex;
+    max-width: 90%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .textinfocontato h3, .textinfocontato p {
+    text-align: center;
+    overflow-wrap: break-word;
     width: 100%;
-    justify-content: space-between;
-  }
+}
 
-  .campus {
-    height: auto;
-    padding-bottom: 2rem;
-  }
+.nameorange{
+  position: relative;
+}
 
-  .img {
-    height: auto;
-    width: 100%;
-    max-width: 300px; 
-    margin-bottom: 1rem;
-  }
+.nome{
+  position: absolute;
+  bottom: 0;
+}
 
-  .nameorange a {
-    margin-left: 1rem;
-  }
+.namegrey{
+  padding: 0;
+  margin: 0;
+}
 
-  .namegrey a img {
-    width: 3rem;
-  }
+.namegrey img{
+  min-width: 50px;
+  min-height: 50px;
+  width: 5vw;
+  height: 5vw;
+}
+
+.infolocal{
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.textinfolocal{
+  padding: 1vw;
+  margin: 0;
+}
+
+.img{
+  display: grid;
+}
+
+.img img{
+  width: 100%;
+}
+
+.imgs-uepa img{
+  max-height: 100%;
+  height: auto;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.container-title h1{
+  display: flex;
+  gap: 1rem;
+}
+
 }

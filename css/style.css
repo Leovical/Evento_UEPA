@@ -422,9 +422,12 @@ footer{
   .head1{
     display: none;
   }
-  .nav-options{
-    display: none;
+  .options{
+    flex-direction: column;
+    gap: 1.5vh;
+    align-items: center;
   }
+
 
   .secpre h1{
     padding: 0;
