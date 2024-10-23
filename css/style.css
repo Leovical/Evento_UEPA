@@ -160,7 +160,7 @@ footer{
   padding-right: 2rem;
   border: 2px solid rgb(235, 222, 222);
   justify-content: space-between;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 .namegrey a img{
@@ -450,6 +450,14 @@ footer{
   }
 
   .infocontato{
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .infolocal{
     flex-direction: column-reverse;
     justify-content: center;
     margin: 0;

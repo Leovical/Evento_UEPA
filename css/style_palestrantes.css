@@ -387,8 +387,15 @@ footer{
 }
 
 .namegrey{
-  padding: 0;
-  margin: 0;
+  background-color: rgb(63, 61, 61);
+  height: 12rem;
+  width: 46.5%;
+  display: flex;
+  align-items: center;
+  padding-right: 2rem;
+  border: 2px solid rgb(235, 222, 222);
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .namegrey img{
