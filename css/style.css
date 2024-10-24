@@ -60,6 +60,10 @@ header{
 footer{
   display: flex;
   width: 100vw;
+  white-space: nowrap; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 1rem;
 }
 
 .nameblack{
