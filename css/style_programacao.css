@@ -208,12 +208,12 @@ footer{
 
 /* CRONOGRAMAS */
 .schedule-content {
-  display: none;
   padding: 1rem;
   background-color: #f7f7f7;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-top: 1.5rem;
 }
 
 .schedule-content ul {
@@ -232,11 +232,6 @@ footer{
   cursor: pointer;
 }
 
-/* animação de expansão */
-.schedule-content.open {
-  display: block;
-  animation: expand 0.3s ease-out;
-}
 
 @keyframes expand {
   from {
