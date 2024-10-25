@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style_inscricoes.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="js/inscricoes.js"></script>
 </head>
 <body>
   <header>
@@ -157,31 +158,6 @@
         </div>
       </footer>
 
-      <!-- validação de e-mail -->
-      <script>
-        $(document).ready(function() {
-          $('#registration-form').on('submit', function(e) {
-            var email = $('#email').val();
-            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-      
-            if (!emailPattern.test(email)) {
-              alert('Por favor, insira um e-mail válido.');
-              e.preventDefault();  // Impede o envio do formulário se o e-mail for inválido
-            }
-          });
-        });
-      </script>
-
-       <!-- máscara para telefone e CPF -->
-      <script>
-        $(document).ready(function() {
-          // Máscara para o campo de telefone
-          $('#phone').mask('(00) 00000-0000');
-          
-          // Máscara para o campo de CPF
-          $('#cpf').mask('000.000.000-00');
-        });
-      </script>
 
 </body>
 
