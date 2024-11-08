@@ -155,6 +155,77 @@
 
           </div> 
      </div>
+
+     <section id="curso-estrutura">
+      <div class="container-title">
+        <div class="horizontal-bar"></div>
+        <h1>VISÃO GERAL<span> DO EVENTO</span></h1>
+        <div class="horizontal-bar"></div>
+      </div>
+
+      <div class="container">
+        <!-- carrossel de fotos -->
+        <div class="carousel-container">
+          <div class="carousel">
+            <img src="img/devops.jpeg" alt="Evento 1" />
+            <img src="img/devops2.png" alt="Evento 2" />
+            <img src="img/devops3.png" alt="Evento 3" />
+          </div>
+        </div>
+
+        <!-- loop em javascript -->
+        <script>
+          const carousel = document.querySelector('.carousel');
+          let currentIndex = 0;
+          const totalImages = document.querySelectorAll('.carousel img').length;
+        
+          function showNextImage() {
+      
+            currentIndex = (currentIndex + 1) % totalImages;
+            const translateXValue = -currentIndex * 100;
+        
+            carousel.style.transform = `translateX(${translateXValue}%)`;
+          }
+     
+          setInterval(showNextImage, 3000); 
+        </script>
+
+        <!-- descrição textual do evento -->
+        <div class="cards-curso">
+          <h2>O que esperar do CodeLink Summit?</h2>
+          <p>
+            O CodeLink Summit é um evento imperdível para profissionais e entusiastas de tecnologia. Durante uma semana,
+            abordaremos como as práticas de DevOps e Automação estão revolucionando o desenvolvimento de software,
+            otimizando tanto a entrega contínua quanto a integração entre equipes de desenvolvimento e operações.
+          </p>
+          <p>
+            Vamos explorar em profundidade o uso de ferramentas essenciais como Docker e Kubernetes, destacando como
+            elas podem ser implementadas para gerenciar e orquestrar contêineres de forma eficiente. Será dado um
+            enfoque prático em CI/CD (Integração Contínua e Entrega Contínua), demonstrando como essas práticas podem
+            reduzir o tempo de entrega de software e aumentar a qualidade final do produto.
+          </p>
+          <p>
+            Além disso, discutiremos o papel crescente da Inteligência Artificial (IA) no desenvolvimento de software,
+            desde a automação de processos até a criação de soluções que utilizam aprendizado de máquina para resolver
+            problemas complexos. Você aprenderá como IA e DevOps podem ser combinados para criar fluxos de trabalho
+            ainda mais ágeis e otimizados.
+          </p>
+          <p>
+            Ao longo do evento, você terá a oportunidade de participar de workshops práticos, onde poderá aplicar os
+            conceitos discutidos e trocar experiências com outros profissionais. Palestrantes renomados compartilharão
+            suas experiências em projetos reais, mostrando como enfrentar desafios de escalabilidade, segurança e
+            otimização de recursos em ambientes de produção.
+          </p>
+          <p>
+            Também serão apresentadas as tendências mais recentes em cloud computing, microsserviços e pipelines de
+            automação, ajudando você a preparar sua equipe e infraestrutura para os desafios do futuro. O CodeLink
+            Summit oferece uma visão holística da transformação digital e da integração de novas tecnologias,
+            proporcionando insights valiosos para quem deseja liderar a inovação no setor de TI.
+          </p>
+        </div>
+      </div>
+
+    </section>
       </main>
 
       <footer id="rodape">

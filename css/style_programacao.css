@@ -137,6 +137,7 @@ footer{
 
 .programacao{
   min-height: 50rem;
+  margin-top: -2rem;
   background-color:#eee;
 }
 
@@ -204,6 +205,93 @@ footer{
 .box-dia p {
   color: rgb(87, 87, 87);
   font-size: 1rem;
+}
+
+
+.horizontal-bar {
+  height: 4px;
+  width: 16rem;
+  background-color: rgb(255, 153, 0);
+}
+
+.container-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 2rem;
+}
+
+.container-title h1{
+  font-size: 2.5rem;
+}
+
+/* Layout para a seção curso-estrutura */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 2vh 6vw;
+}
+
+/* Estilizando o carrossel */
+.carousel-container {
+  width: 45%;
+  overflow: hidden; /* Esconde as imagens fora do container */
+  position: relative; /* Necessário para o posicionamento do carrossel */
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 10px;
+
+}
+
+.carousel img {
+  min-width: 100%; 
+  height: auto;
+  border-radius: 15px; 
+  transition: transform 0.5s ease-in-out; 
+}
+
+
+/* Cards de descrição do evento */
+.cards-curso {
+  width: 55%;
+  padding: 2rem;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.76);
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.76);
+  border-radius: 10px;
+}
+
+.cards-curso h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cards-curso p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+#curso-estrutura h1 {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#curso-estrutura h1 span {
+  color: rgb(87, 87, 87);
+}
+
+#curso-estrutura ol {
+  margin-left: 20px;
+}
+
+#curso-estrutura ul {
+  margin-left: 30px;
 }
 
 /* CRONOGRAMAS */
@@ -388,6 +476,18 @@ footer{
     flex-direction: column;
     gap: 1.5vh;
     align-items: center;
+  }
+
+  .carousel-container{
+    width: 75%;
+  }
+
+  .cards-curso{
+    width: 75%;
+  }
+
+  .container{
+    flex-direction: column;
   }
 
 
