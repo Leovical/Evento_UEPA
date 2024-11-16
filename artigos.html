@@ -1,11 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enviar Artigos</title>
+    <link rel="stylesheet" href="css/artigos.css" />
 </head>
+
 <body>
-    
+    <header>
+
+        <div class="head">
+            <div class="logamazon">
+                <img src="img/codelink.png" alt="Logo do evento" />
+            </div>
+
+            <div class="head1">
+                <div class="contato">
+                    <img src="img/contato.png" alt="num foi" />
+
+                    <div class="textcont">
+                        <h3>(91) 3765-1566</h3>
+                        <p>amazonia.clsummit@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="horario">
+                    <img src="img/relogio.png" alt="" />
+
+                    <div class="textcont">
+                        <h3>04/11/2024 - 08/11/2024</h3>
+                        <p>Segunda à Sexta - 14h00 às 18h00</p>
+                    </div>
+                </div>
+
+                <div class="local">
+                    <img src="img/localizacao.png" alt="" />
+
+                    <div class="textcont">
+                        <h3>Castanhal, PA</h3>
+                        <p>R. Pedro Porpino da Silva, 1181 - São José, 68745-000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-options">
+            <div class="options">
+                <a href="index.html">
+                    <p>Evento</p>
+                </a>
+                <a href="programacao.html">
+                    <p>Programação</p>
+                </a>
+                <a href="palestrantes.html">
+                    <p>Palestrantes</p>
+                </a>
+
+                <a href="campus.html">
+                    <p>Campus</p>
+                </a>
+                <a href="inscricoes.html">
+                    <p>Inscrições</p>
+                </a>
+                <a href="artigos.html">
+                    <p>Enviar Artigos</p>
+                </a>
+                </a>
+                <a href="#rodape">
+                    <p>Mais Info.</p>
+                </a>
+            </div>
+        </nav>
+
+    </header>
+
+    <main id="envio-artigo">
+        <div class="artigo">
+            <div class="horizontal-bar"></div>
+            <div class="textinscricoes">
+                <h2>Envio de Artigos</h2>
+
+
+                <p>Preencha as informações abaixo para enviar seu artigo.</p>
+
+                <form action="/submit-article" method="post" enctype="multipart/form-data">
+                    <label for="titulo">Título do Artigo:</label>
+                    <input type="text" id="titulo" name="titulo" required>
+
+                    <label for="autores">Nomes dos Autores:</label>
+                    <input type="text" id="autores" name="autores" required>
+
+                    <label for="orientador">Orientador(a):</label>
+                    <input type="text" id="orientador" name="orientador" required>
+
+                    <label for="arquivo">Envio do Arquivo:</label>
+                    <input type="file" id="arquivo" name="arquivo" accept=".pdf, .xml, .ePub" required title="Somente arquivos nos formatos .pdf, .xml e .ePub são permitidos"d>
+
+                    <label for="comentarios">Comentários sobre o Artigo:</label>
+                    <textarea id="comentarios" name="comentarios" rows="5" required></textarea>
+
+                    <button type="submit">Enviar Artigo</button>
+                </form>
+
+            </div>
+            <div class="horizontal-bar"></div>
+        </div>
+    </main>
+
+    <footer id="rodape">
+
+        <div class="nameorange">
+
+            <div class="nome">
+                <div>
+                    <p>-- © Copyright, site desenvolvido por JLP --</p>
+                </div>
+            </div>
+
+            <div class="infocontato">
+                <img src="img/contato.png" alt="num deu">
+
+                <div class="textinfocontato">
+                    <h3>(91) 3765-1566</h3>
+                    <p>amazonia.clsummit@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="nameblack">
+            <a href="https://www.instagram.com" target="_blank"><img src="img/icon-instagram.png" alt="num deu"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="img/icon-facebook.png" alt="num deu"></a>
+            <a href="https://twitter.com" target="_blank"><img src="img/icon-twitter.png" alt="num deu"></a>
+            <a href="https://www.youtube.com" target="_blank"> <img src="img/icon-youtube.png" alt="num deu"></a>
+        </div>
+
+
+
+        <div class="namegrey">
+            <div class="infolocal">
+
+                <img src="img/icon-localorange.png" alt="num deu">
+
+                <div class="textinfolocal">
+                    <h3 style="color: rgb(247, 173, 61);">Castanhal, PA</h3>
+                    <p style="color: white;">R. Pedro Porpino da Silva, 1181 - São José, 68745-000</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
