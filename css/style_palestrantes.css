@@ -44,6 +44,10 @@ footer{
     display: flex;
 }
 
+.container-title h1{
+  font-size: 2.5rem;
+}
+
  
 
 /*CABEÇALHO*/

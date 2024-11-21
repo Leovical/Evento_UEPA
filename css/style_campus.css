@@ -206,6 +206,11 @@ footer{
   object-fit: cover;
 }
 
+.container-title h1{
+  font-size: 2.5rem;
+}
+
+
 
 /*FOOTER*/
   .nameblack{
