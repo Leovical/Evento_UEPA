@@ -32,7 +32,6 @@ a:hover{
 }
 
 body{
-  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -59,7 +58,6 @@ header{
 
 footer{
   display: flex;
-  width: 100vw;
   white-space: nowrap; 
   justify-content: center; 
   align-items: center; 
@@ -238,10 +236,6 @@ footer{
   border: 1px;
   align-items: center;
   gap: 1rem;
-}
-
-.horario, .contato {
-  transform: translateX(-65px); 
 }
 
 .local {

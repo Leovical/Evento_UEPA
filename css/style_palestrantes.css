@@ -90,10 +90,6 @@ footer{
   gap: 1rem;
 }
 
-.horario, .contato {
-  transform: translateX(-65px); 
-}
-
 .local {
   display: flex;
   flex-wrap: wrap;
