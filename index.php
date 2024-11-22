@@ -34,6 +34,6 @@ try {
         echo "Método de requisição inválido.";
     }
 } catch (PDOException $e) {
-    print_r($e);
+    echo "Ocorreu um erro ao processar sua solicitação. Tente novamente mais tarde.";
 }
 ?>
