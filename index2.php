@@ -38,11 +38,11 @@ try {
 
             // Move o arquivo para o diretório de uploads
             if (!move_uploaded_file($fileTmpPath, $filePath)) {
-                echo "Erro ao mover o arquivo para o diretório de uploads.";
+                echo "<script type='text/javascript'>alert('Erro ao mover o arquivo para o diretório de uploads.');</script>";
                 exit;
             }
         } else {
-            echo "Erro no envio do arquivo. Código de erro: " . ($_FILES['arquivo']['error'] ?? 'Nenhum arquivo enviado.');
+            echo "<script type='text/javascript'>alert('Erro no envio do arquivo. Código de erro: " . ($_FILES['arquivo']['error'] ?? 'Nenhum arquivo enviado.') . "');</script>";
             exit;
         }
 
@@ -52,19 +52,19 @@ try {
 
             // Tenta executar a query e verifica se foi bem-sucedida
             if ($stmt->execute([$titulo, $autores, $orientador, $filePath, $comentarios])) {
-                // Exibe apenas a mensagem de sucesso
-                echo "Artigo enviado com sucesso!";
+                // Exibe um pop-up de sucesso
+                echo "<script type='text/javascript'>alert('Artigo enviado com sucesso!');</script>";
             } else {
-                echo "Erro ao salvar artigo no banco de dados.";
+                echo "<script type='text/javascript'>alert('Erro ao salvar artigo no banco de dados.');</script>";
             }
         } else {
-            echo "Por favor, preencha todos os campos obrigatórios.";
+            echo "<script type='text/javascript'>alert('Por favor, preencha todos os campos obrigatórios.');</script>";
         }
     } else {
-        echo "Método de requisição inválido.";
+        echo "<script type='text/javascript'>alert('Método de requisição inválido.');</script>";
     }
 } catch (PDOException $e) {
     // Exibe mensagens de erro do banco de dados em caso de falha
-    echo "Erro na conexão ou execução no banco de dados: " . $e->getMessage();
+    echo "<script type='text/javascript'>alert('Erro na conexão ou execução no banco de dados: " . $e->getMessage() . "');</script>";
 }
 ?>

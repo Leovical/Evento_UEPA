@@ -26,9 +26,9 @@ try {
             $stmt = $pdo->prepare("INSERT INTO participantes (nome, email, telefone, cpf, cargo, info_adicionais) VALUES (?, ?, ?, ?, ?, ?)");
             $stmt->execute([$fullName, $email, $phone, $cpf, $position, $additionalInfo]);
             
-            echo "Inscrição realizada com sucesso!";
+            echo "<script type='text/javascript'>alert('Inscrição realizada com sucesso!');</script>";
         } else {
-            echo "Por favor, preencha todos os campos obrigatórios.";
+            echo "<script type='text/javascript'>alert('Por favor, preencha todos os campos obrigatórios.');</script>";
         }
     } else {
         echo "Método de requisição inválido.";
